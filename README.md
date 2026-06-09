@@ -1,6 +1,6 @@
 # Companion
 
-![Companion Screenshot](resources/ss.png)
+![Companion Screenshot](resources/Scr.png)
 
 This allows you to have multiple bluetooth device connected to same device to listen to same audio
 
