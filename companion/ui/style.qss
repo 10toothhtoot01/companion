@@ -1,0 +1,98 @@
+/* Companion — Nothing-style QSS. __DISPLAY_FONT__ is substituted at load time. */
+
+* {
+    font-family: "__DISPLAY_FONT__", "Liberation Mono", monospace;
+    color: #ffffff;
+}
+
+QMainWindow, QWidget#Root {
+    background-color: #000000;
+}
+
+/* Frameless-window chrome (custom title bar + window buttons) */
+QWidget#TitleBar {
+    background-color: #000000;
+    border-bottom: 1px solid #161616;
+}
+QLabel#TitleBarName { color: #8a8a8a; }
+QPushButton#WinBtn, QPushButton#WinBtnClose {
+    background-color: transparent;
+    border: none;
+    color: #8a8a8a;
+    border-radius: 4px;
+}
+QPushButton#WinBtn:hover { background-color: #1c1c1c; color: #ffffff; }
+QPushButton#WinBtnClose:hover { background-color: #d71921; color: #ffffff; }
+
+QLabel[role="eyebrow"] {
+    color: #5a5a5a;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+QLabel[role="muted"] {
+    color: #7a7a7a;
+    font-size: 11px;
+}
+
+QLabel[role="truth"] {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* Device tile */
+QFrame#DeviceTile {
+    background-color: #0c0c0c;
+    border: 1px solid #1c1c1c;
+    border-radius: 6px;
+}
+QFrame#DeviceTile[selected="true"] {
+    border: 1px solid #ffffff;
+}
+QFrame#DeviceTile[idle="true"] {
+    background-color: #080808;
+}
+
+/* Primary verb button: inverted (white fill, black text) */
+QPushButton[verb="primary"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 28px;
+    padding: 16px 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+QPushButton[verb="primary"]:hover { background-color: #e6e6e6; }
+QPushButton[verb="primary"]:pressed { background-color: #cccccc; }
+
+/* Secondary verb tiles */
+QPushButton[verb="secondary"] {
+    background-color: #0c0c0c;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 18px;
+    letter-spacing: 3px;
+}
+QPushButton[verb="secondary"]:hover { border-color: #555555; }
+
+/* Outlined / ghost (Scan) */
+QPushButton[verb="ghost"] {
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 23px;
+    padding: 12px 24px;
+    letter-spacing: 4px;
+    color: #cccccc;
+}
+QPushButton[verb="ghost"]:hover { border-color: #777777; color: #ffffff; }
+
+/* The single accent: only for live / active affordances */
+QPushButton[accent="true"], QLabel[accent="true"] { color: #d71921; }
+
+QSlider::groove:horizontal { height: 4px; background: #1c1c1c; border-radius: 2px; }
+QSlider::sub-page:horizontal { background: #ffffff; border-radius: 2px; }
+QSlider::handle:horizontal {
+    background: #d71921; width: 18px; height: 18px;
+    margin: -8px 0; border-radius: 9px;
+}

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Companion
+GenericName=Bluetooth Audio
+Comment=The Ultimate Linux Bluetooth Companion
+Exec=companion
+Icon=companion
+Terminal=false
+Categories=AudioVideo;
+Keywords=bluetooth;audio;codec;pipewire;headphones;earbuds;
+StartupNotify=true
+StartupWMClass=companion

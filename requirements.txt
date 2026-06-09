@@ -1,0 +1,6 @@
+# Runtime dependencies (install on a real Linux session with BlueZ + PipeWire).
+PySide6>=6.6
+# Async D-Bus client. Pure-python, no libdbus build needed. Modern replacement for dbus-python.
+dbus-fast>=2.21
+# Bridges asyncio with the Qt event loop so D-Bus coroutines run on the GUI thread.
+qasync>=0.27

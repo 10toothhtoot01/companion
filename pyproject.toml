@@ -1,0 +1,30 @@
+[project]
+name = "companion"
+version = "0.1.0"
+description = "The Ultimate Linux Bluetooth Companion — native Qt6 Bluetooth audio control"
+requires-python = ">=3.10"
+dependencies = [
+    "PySide6>=6.6",
+    "dbus-fast>=2.21",
+    "qasync>=0.27",
+]
+
+[project.scripts]
+companion = "companion.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# The repo is a flat layout with several top-level dirs (data, polkit, resources,
+# packaging) next to the package. Tell setuptools the importable package is
+# `companion` (and its subpackages) so it doesn't try to ship those folders.
+[tool.setuptools.packages.find]
+include = ["companion*"]
+
+# style.qss is a non-.py file living inside the package. setuptools will NOT ship it
+# unless we declare it here, so a `pip install .` (used by packaging/install.sh) would
+# otherwise produce an unstyled app (no red accents / QSS). Keep this in sync with the
+# PyInstaller spec, which bundles the same file for the AppImage build.
+[tool.setuptools.package-data]
+companion = ["ui/*.qss"]
