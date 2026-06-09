@@ -1,6 +1,6 @@
 # Companion
 
-![Companion Screenshot](resources/Scr.png)
+
 
 This allows you to have multiple bluetooth device connected to same device to listen to same audio
 
@@ -28,4 +28,4 @@ chmod +x install.sh
 
 then run it by typing companion on your terminal or, using your app drawer
 
-
+![Companion Screenshot](resources/Scr.png)
