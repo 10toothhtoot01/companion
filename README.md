@@ -1,5 +1,7 @@
 # Companion
 
+![Companion Screenshot](resources/ss.png)
+
 This allows you to have multiple bluetooth device connected to same device to listen to same audio
 
 Note:This is simply a GUI wrapper for a small feature of PIPEWIRE, also, it has some extra simple set of features too
@@ -25,3 +27,5 @@ chmod +x install.sh
 ```
 
 then run it by typing companion on your terminal or, using your app drawer
+
+
