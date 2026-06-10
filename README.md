@@ -18,7 +18,7 @@ in the cloned directory after giving permissions or just double click on the app
 
 ## Installation
 
-To install it into your system, clone this directory, inside the treminal, run these commands :
+To install it into your system, clone this directory, inside the terminal, run these commands :
 
 ```bash
 cd install
