@@ -16,6 +16,9 @@ You can use the appImage directly by running :
 
 in the cloned directory after giving permissions or just double click on the appimage in any GUI file manager
 
+Example:
+If you want to watch a movie with multiple friends around, and, don't want to use device speakers, connect multiple bluetooth or wired devices, earbuds, and, use this, to get the audio output to all of them at once
+
 ## Installation
 
 To install it into your system, clone this directory, inside the terminal, run these commands :
